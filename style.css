@@ -40,6 +40,20 @@ circle:hover {
   fill: blueviolet;
 }
 
+rect {
+  fill: mediumpurple;
+}
+
+rect:hover {
+  fill: blueviolet;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: grey;
+    border: solid;    
+}
+
 .border {
   stroke: green;
   stroke-width: 5px;
