@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html> 
+<html>
 
 <head>
     <meta charset=utf-8/>
@@ -13,10 +13,53 @@
     <h1>hw-05: Interactive Graph with D3</h1>
      <div class = "flex-container">
         <!--LEFT COLUMN-->
-        <div class="left-col" id = "visGraph">
+        <div class="left-col" id = "visGraph1">
             <!-- Use one svg tag as a "frame", and build inside of it -->
             <svg id="frame">
             </svg>
+        </div>
+        <!--RIGHT COLUMN-->
+        <div class="right-col">
+          <!--This paragraph is populated after a point is clicked-->
+          <p id="coord-id"></p>
+
+          <!-- x value selection -->
+          <label for="x-coord">Select the x-coordinate for the point you want to add:</label>
+
+          <select name="x-coord" id="x-coord">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+
+          <br/>
+          <br/>
+
+          <!-- y value selection -->
+          <label for="y-coord">Select the x-coordinate for the point you want to add:</label>
+
+          <select name="y-coord" id="y-coord">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+
+          <br/>
+          <br/>
+
+          <button id="submit">Submit</button>
 
         </div>
     </div>
